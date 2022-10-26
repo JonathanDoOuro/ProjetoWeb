@@ -1,4 +1,4 @@
-package com.minhaEmpresaNova.course.resources;
+package com.empresa.course.resources;
 
 import java.util.List;
 
@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.minhaEmpresaNova.course.entities.Order;
-import com.minhaEmpresaNova.course.services.OrderService;
+import com.empresa.course.entities.Category;
+import com.empresa.course.services.CategoryService;
 
 @RestController
-@RequestMapping(value = "/Orders")
-public class OrderResource {
+@RequestMapping(value = "/categories")
+public class CategoryResource {
 	
 	@Autowired //dependencia autoInjetada pelo Spring
-	private OrderService OrderService;
+	private CategoryService categoryService;
 	
 	@GetMapping
-	public ResponseEntity<List<Order>> findAll() {
-		List<Order> lista = OrderService.findAll();
+	public ResponseEntity<List<Category>> findAll() {
+		List<Category> lista = categoryService.findAll();
 		return ResponseEntity.ok().body(lista);
 	}
 	
 	@GetMapping(value = "/{id}") //passando o id como parametro pela url
-	public ResponseEntity<Order> findById(@PathVariable Long id) { //utiliza o id da url
-		Order obj = OrderService.findById(id);
+	public ResponseEntity<Category> findById(@PathVariable Long id) { //utiliza o id da url
+		Category obj = categoryService.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 }

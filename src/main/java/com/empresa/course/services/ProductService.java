@@ -1,4 +1,4 @@
-package com.minhaEmpresaNova.course.services;
+package com.empresa.course.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.minhaEmpresaNova.course.entities.Product;
-import com.minhaEmpresaNova.course.repositories.ProductRepository;
+import com.empresa.course.entities.Product;
+import com.empresa.course.repositories.ProductRepository;
 
 @Service
 public class ProductService {

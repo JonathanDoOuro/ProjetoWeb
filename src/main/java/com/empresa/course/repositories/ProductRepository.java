@@ -1,9 +1,9 @@
-package com.minhaEmpresaNova.course.repositories;
+package com.empresa.course.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.minhaEmpresaNova.course.entities.Product;
+import com.empresa.course.entities.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {

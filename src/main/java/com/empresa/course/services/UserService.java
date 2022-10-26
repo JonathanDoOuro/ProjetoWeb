@@ -1,4 +1,4 @@
-package com.minhaEmpresaNova.course.services;
+package com.empresa.course.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.minhaEmpresaNova.course.entities.User;
-import com.minhaEmpresaNova.course.repositories.UserRepository;
+import com.empresa.course.entities.User;
+import com.empresa.course.repositories.UserRepository;
 
 @Service
 public class UserService {

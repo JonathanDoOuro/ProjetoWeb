@@ -1,4 +1,4 @@
-package com.minhaEmpresaNova.course.entities.enums;
+package com.empresa.course.entities.enums;
 
 public enum OrderStatus {
 	WAITING_PAYMENT(1),
